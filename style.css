@@ -145,7 +145,7 @@ span {
 	.invitation {
 		background-image: url(./invite-bg-vertical.png);
 		width: 400px;
-		height: 800px;
+		height: 700px;
 		transform: translateY(10px);
 		overflow: hidden;
 	}
