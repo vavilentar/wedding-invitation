@@ -1,6 +1,5 @@
 /*Imports*/
-
-
+@import url(./animations.css);
 
 /*General styles*/
 
@@ -67,6 +66,7 @@ html {
 	background-image: url(./invite-bg.png);
 	background-size: cover;
 	background-color: rgb(255, 245, 231);
+	animation: bg-fade-out ease-out 1s;
 }
 
 .square-1 {
@@ -77,7 +77,7 @@ html {
 	left: 50%;
 	top: 50%;
 	transform: translate3d(-50%, -50%, 0) rotate(52deg);
-
+	animation: square-fade-out ease-out 1s;
 }
 
 .square-2 {
@@ -88,21 +88,29 @@ html {
 	left: 50%;
 	top: 50%;
 	transform: translate3d(-50%, -50%, 0) rotate(37deg);
+	animation: sec-square-fade-out ease-out 2s;
 }
 
 h1 {
+	opacity: 0;
 	font-family: 'Great vibes';
 	font-size: 86px;
 	line-height: 60px;
 	color: rgba(255, 174, 0, 0.8);
+	animation: text-fade-out ease-in-out 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
 }
 
 h2,
 h3 {
+	opacity: 0;
 	font-family: 'Lobster two';
 	font-size: 26px;
 	color: rgba(255, 174, 0, 0.8);
-
+	animation: text-fade-out ease-in-out 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
 }
 
 .of-style {
