@@ -54,7 +54,7 @@ html {
 /*Other styles*/
 
 .invitation {
-	transform: translateY(20%);
+	transform: translateY(20px);
 	position: relative;
 	width: 1000px;
 	height: 600px;
