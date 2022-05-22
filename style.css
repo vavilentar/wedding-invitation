@@ -1,0 +1,152 @@
+/*Imports*/
+
+
+
+/*General styles*/
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+body,
+html {
+	scroll-behavior: smooth;
+}
+
+/*Other styles*/
+
+.invitation {
+	transform: translateY(20%);
+	position: relative;
+	width: 1000px;
+	height: 600px;
+	/* border: 2px solid rgba(0, 0, 0, 0.212); */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.3);
+	background-image: url(./invite-bg.png);
+	background-size: cover;
+	background-color: rgb(255, 245, 231);
+}
+
+.square-1 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	border: 2px solid rgba(255, 174, 0, 0.4);
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0) rotate(52deg);
+
+}
+
+.square-2 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	border: 2px solid rgba(255, 174, 0, 0.4);
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0) rotate(37deg);
+}
+
+h1 {
+	font-family: 'Great vibes';
+	font-size: 86px;
+	line-height: 60px;
+	color: rgba(255, 174, 0, 0.8);
+}
+
+h2,
+h3 {
+	font-family: 'Lobster two';
+	font-size: 26px;
+	color: rgba(255, 174, 0, 0.8);
+
+}
+
+.of-style {
+	position: relative;
+	line-height: 15px;
+}
+
+.of-style::after {
+	position: absolute;
+	content: '';
+	width: 50px;
+	height: 2px;
+	background: rgba(255, 174, 0, 0.8);
+	left: 25px;
+	top: 50%;
+}
+
+.of-style::before {
+	position: absolute;
+	content: '';
+	width: 50px;
+	height: 2px;
+	background: rgba(255, 174, 0, 0.8);
+	right: 25px;
+	top: 50%;
+}
+
+.names {
+	font-size: 35px;
+	display: flex;
+	align-items: center;
+}
+
+span {
+	font-size: 20px;
+	padding: 0 10px;
+}
+
+@media (max-width: 426px) {
+	.invitation {
+		background-image: url(./invite-bg-vertical.png);
+		width: 400px;
+		height: 800px;
+		transform: translateY(10px);
+		overflow: hidden;
+	}
+}
